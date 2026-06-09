@@ -122,3 +122,13 @@ First page
 
 }
 
+
+
+
+var songTitle by remember { mutableStateOf("") }
+OutlinedTextField(
+    value = songTitle,
+    onValueChange = { songTtle = it },
+    label = { Text("Song Title") },
+    placeholder = { Text("Song Title") }
+)
